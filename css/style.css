@@ -91,7 +91,8 @@ div.title{
     gap: 10px;
 }
 div.album{
-    width: calc((100% - 20px) / 6);
+    width: calc((100% - 50px) / 6);
+    text-align: center;
 }
 div.album img{
     width: 100%;
