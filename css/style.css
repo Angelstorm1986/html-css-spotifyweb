@@ -22,6 +22,10 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+main{
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
 h1{
     font-weight: 700;
     font-size: normal;
@@ -41,20 +45,47 @@ h3{
     height: calc(100vh - 90px);
     display: flex;
 }
+
+/* Barra di navigazione Laterale */
 aside{
     width: 200px;
     background-color: black;
+    padding: 20px;
 }
-main{
-    width: calc(100% - 200px);
-    overflow-y: auto;
+.logo{
+    width: 70%;
 }
+.search{
+    padding-top: 20px;
+    line-height: 20px;
+}
+.search div img{
+    width: 20%;
+    vertical-align: middle;
+}
+.search div span{
+    vertical-align: middle;
+}
+/* Barra di navigazione Top */
 nav.top{
-    width: 100%;
+    width: calc(100% - 200px);
     height: 90px;
     background-color: rgba(0,0,0,0.5);
     position: fixed;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-right: 30px;
 }
 
 /* Menu */
