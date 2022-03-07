@@ -1,0 +1,9 @@
+@media screen and (max-width: 1000px) {
+    .selection{
+        flex-wrap: wrap;
+    }
+    div.album{
+        width: calc(100% / 4);
+    }
+    
+}

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify Web</title>
 </head>
 <body>
@@ -14,11 +18,16 @@
             
         </aside>
         <main>
+
+            <!-- Barra di navigazione Top -->
             <nav class="top">
 
             </nav>
+            <!-- /Barra di navigazione Top -->
+
+            <!-- Menu -->
             <div class="container">
-                <nav>
+                <nav class="choice">
                     <ul>
                         <li><a href="#">in evidenza</a></li>
                         <li><a href="#">podcast</a></li>
@@ -28,7 +37,74 @@
                         <li><a href="#">scopri  </a></li>
                     </ul>
                 </nav>
+                <div class="recipient">
+                    <div class="title">
+                        <h1>Recently played</h1>
+                    </div>
+                    <section class="selection">
+                        <div class="album">
+                            <img src="img/metal_lifting.jpg" alt="Dischi Metal">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/stranger.jpeg" alt="Stranger Things">
+                            <h3>Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Micheal Stein</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/aquietplace.jpeg" alt="A quiet place">
+                            <h3>A quiet place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/split.jpeg" alt="Split">
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/cure.jpeg" alt="Cure">
+                            <h3>A cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/sinister.jpeg" alt="Sinister">
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </section>
+                    <div class="title">
+                        <h1>Creato per John Doe</h1>
+                        <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                    </div>
+                    <section class="selection">
+                        <div class="album">
+                            <img src="img/radar.jpeg" alt="Radar">
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="album">
+                            <img src="img/mixdaily.jpeg" alt="Mix Daily">
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </section>
+                    <div class="title">
+                        <h1>Artisti pi&ugrave; popolari</h1>
+                        <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                    </div>  
+                    <section class="selection">
+                        <div class="album">
+                            <img class="circle" src="img/youg.jpeg" alt="Youg">
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="album">
+                            <img class="circle" src="img/einaudi.jpeg" alt="Einaudi">
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </section>
+                </div>
             </div>
+            <!-- /Menu -->
+
         </main>
     </div>
     <!-- /Corpo della pagina -->
