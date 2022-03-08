@@ -1,9 +1,8 @@
-@media screen and (max-width: 907px) {
+@media screen and (max-width: 992px) {
     .selection{
         flex-wrap: wrap;
     }
     div.album{
         width: calc((100% - 50px) / 4);
     }
-    
 }
