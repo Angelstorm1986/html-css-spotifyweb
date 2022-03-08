@@ -11,7 +11,7 @@
         flex-wrap: wrap;
     }
     div.album{
-        width: calc((100% - 50px) / 2);
+        width: calc((100% - 10px) / 2);
     }
 }
 @media screen and (max-width: 575px) {
