@@ -208,7 +208,7 @@ div.album img{
 }
 .music-bar-aside{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .music-bar-aside{
