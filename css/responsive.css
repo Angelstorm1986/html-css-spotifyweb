@@ -1,8 +1,59 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .selection{
         flex-wrap: wrap;
     }
     div.album{
         width: calc((100% - 50px) / 4);
+    }
+}
+@media screen and (max-width: 767px) {
+    .selection{
+        flex-wrap: wrap;
+    }
+    div.album{
+        width: calc((100% - 50px) / 2);
+    }
+}
+@media screen and (max-width: 575px) {
+    main{
+        width: calc(100% - 50px);
+    }
+    aside{
+        width: 50px;
+        padding: 10px;
+    }
+    aside span{
+        display: none;
+    }
+    .nav-aside-top{
+        overflow-y: visible;
+    }
+    #large{
+        display: none;
+    }
+    #small{
+        display: inline-block;
+    }
+    .search div img{
+        width: 30px;
+        vertical-align: middle;
+    }
+    .play{
+        display: none;
+    }
+    .nav-aside-bottom i{
+        margin-top: 10px;   
+    }
+    .nav-aside-bottom hr{
+        display: none;
+    }
+    .nav-aside-bottom h2{
+        display: none;
+    }
+    nav.top{
+        width: calc(100% - 50px);
+    }
+    .selection{
+        flex-wrap: wrap;
     }
 }
