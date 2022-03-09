@@ -60,7 +60,8 @@ aside span{
 .nav-aside-top{
     width: 100%;
     height: calc(100% - 80px);
-    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .logo{
     width: 100%;
@@ -83,9 +84,12 @@ aside span{
 .search div span{
     vertical-align: middle;
 }
-
+.play-top{
+    height: 30%;
+    padding-bottom: 10px;
+} 
 .play h3{
-    padding: 10px 0;
+    padding: 5px 0;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 15px;
@@ -93,13 +97,18 @@ aside span{
 .fa-circle-plus{
     color: #73757b;
 }
-.play ul{
+.play-bottom{
+    height: 70%;
+}      
+.play-bottom ul{
+    height: 100%;
     list-style-type: none;
     text-decoration: none;
     padding: 10px 0;
 }
-.play ul li{
+.play-bottom ul li{
     font-size: 15px;
+    overflow-y: auto;
 }
 .nav-aside-bottom{
     width: 100%;
@@ -207,44 +216,64 @@ div.album img{
     display: flex;    
 }
 .music-bar-aside{
+    width: 20%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
-.music-bar-aside{
-    width: 20%;
+#right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-bar, .center-bar, .right-bar{
+    width: 33%;
+}
+.left-bar{
+    max-height: 60px;
+    max-width: 60px;
+}
+.left-bar img{
+    width: 100%;
     height: 100%;
 }
-.music-bar-aside img{
-    height: 10vh;
-    width: 5vw;
-}
-.music-bar-aside>div, .music-bar-aside>.fa-heart, .music-bar-aside>.fa-folder, .music-bar-aside>.fa-list-ul, .music-bar-aside>.fa-desktop, .music-bar-aside>.fa-volume-high{
-    padding: 0 10px;
+.music-bar-aside>.fa-heart, .music-bar-aside>.fa-folder, .music-bar-aside>.fa-list-ul, .music-bar-aside>.fa-desktop, .music-bar-aside>.fa-volume-high{
+    padding: 0 5px;
 }
 .volume::after{
     content: '';
-    width: 60%;
+    width: 40%;
     height: 3px;
+    padding-left: 10px;
     background-color: grey;
     border-radius: 2px;
 }
 .music-bar-center{
     width: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 .command>.fa-shuffle, .command>.fa-backward-step, .command>.fa-circle-play, .command>.fa-forward-step, .command>.fa-arrow-rotate-right{
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .command{
     width: 100%;
+    height: 60%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.command i{
+    height: 20px;
 }
 .time{
-    width: 70%;
+    width: 60%;
+    height: 40%;
     margin: 0 auto;
     text-align: center;
     display: flex;
