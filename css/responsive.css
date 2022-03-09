@@ -1,3 +1,8 @@
+@media screen and (max-height: 70px) {
+    nav.top{
+        display: none;
+    }
+}
 @media screen and (max-width: 991px) {
     .selection{
         flex-wrap: wrap;
@@ -63,5 +68,15 @@
     }
     .selection{
         flex-wrap: wrap;
+    }
+    .left-bar img{
+        width: 50px;
+        height: 50px;
+    }
+    .center-bar{
+        display: none;
+    }
+    .right-bar{
+        display: none;
     }
 }
