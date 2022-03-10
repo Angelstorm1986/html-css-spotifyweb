@@ -203,7 +203,7 @@ nav.choice a{
 .choice-button:hover::after{
     position: absolute;
     bottom: 0;
-    content: "";
+    content: '';
     width: 30px;
     height: 3px;
     background-color: #adff2f;
