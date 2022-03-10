@@ -356,13 +356,13 @@ div.title{
     position: relative;
 }
 .settings{
-    flex: 1 1 30%; 
+    flex: 1 1 40%; 
 }
 .settings i{
     padding-right: 5px;
 }
 .set-volume{
-    flex: 1 1 70%;
+    flex: 1 1 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -373,6 +373,7 @@ div.title{
 .right-volume{
     position: relative;
     flex: 1 1 100%;
+    padding-right: 10px;
 }
 .volume{
     width: 100%;
