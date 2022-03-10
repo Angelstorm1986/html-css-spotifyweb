@@ -183,25 +183,30 @@ nav.top{
     padding-top: 90px;
 }
 nav.choice{
-    width: 75%;
-    margin: 0 auto;
-    line-height: 50px;
-    text-align: center;
-    padding: 10px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-nav.choice ul{
+nav.choice a{
     list-style-type: none;
-    text-decoration: none;
-}
-nav.choice ul li{
-    display: inline-block;
-    font-size: 12px;
-}
-nav.choice ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    padding-right: 10px;
+    padding-right: 20px;
+}
+.choice-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.choice-button:hover::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #adff2f;
 }
 div.recipient{
     padding: 20px;
@@ -217,26 +222,29 @@ div.title{
 .album{
     width: calc((100% - 50px) / 6);
     text-align: center;
-    position: relative;
 }
 .album img{
     width: 100%;
 }
+.album-cover{
+    position: relative;
+}
 .overlayinn{
     background-color: rgba(0,0,0,0.5);
-    height: 121px;
-    width: 100%;
-    opacity: 0;
     top: 0;
     left: 0;
-    padding: 50px 20px;
+    right: 0;
+    bottom: 0;
     position: absolute;
     transition: opacity .5s;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
-.overlayinn:hover {
-    opacity: 1;
+.album-cover:hover .overlayinn{
+    display: flex;
     transition: opacity .5s;
-  }
+}
 .circle{
     border-radius: 50%;
 }
@@ -257,11 +265,6 @@ div.title{
     align-items: center;
     flex-wrap: wrap;
 }
-#right{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 .left-bar, .center-bar, .right-bar{
     width: 33%;
 }
@@ -276,19 +279,6 @@ div.title{
 .music-bar-aside>.fa-heart, .music-bar-aside>.fa-folder, .music-bar-aside>.fa-list-ul, .music-bar-aside>.fa-desktop, .music-bar-aside>.fa-volume-high{
     padding: 0 5px;
 }
-.settings{
-    
-}
-.settings i{
-    padding-right: 5px;
-}
-.volume{
-    height: 3px;
-    padding-left: 10px;
-    background-color: grey;
-    border-radius: 2px;
-}
-
 .music-bar-center{
     width: 60%;
     display: flex;
@@ -321,7 +311,6 @@ div.title{
     height: 40%;
     margin: 0 auto;
     text-align: center;
-    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -330,8 +319,12 @@ div.title{
 .time span{
     padding: 0 10px;
 }
+.time-loading{
+    position: relative;
+    flex: 1 1 100%;
+}
 .loading{
-    width: 80%;
+    width: 100%;
     height: 3px;
     background-color: grey;
     border-radius: 2px;
@@ -342,5 +335,72 @@ div.title{
     background-color: white;
     border-radius: 2px;
     position: absolute;
-    left: 53px;
+    top: 0;
+    left: 0;
+}
+#loading-button{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -3.5px;
+    left: 8%;
+    background-color: grey;
+    border-radius: 50%;
+    display: none;
+}
+.time-loading:hover #loading-button{
+    display: block;
+}
+#right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.settings{
+    flex: 1 1 30%; 
+}
+.settings i{
+    padding-right: 5px;
+}
+.set-volume{
+    flex: 1 1 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fa-volume-high{
+    padding-right: 10px;
+}
+.right-volume{
+    position: relative;
+    flex: 1 1 100%;
+}
+.volume{
+    width: 100%;
+    height: 3px;
+    background-color: grey;
+    border-radius: 2px;
+}
+.volume-over{
+    width: 20%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#volume-button{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -3.5px;
+    left: 18%;
+    background-color: grey;
+    border-radius: 50%;
+    display: none;
+}
+.right-volume:hover #volume-button{
+    display: block;
 }

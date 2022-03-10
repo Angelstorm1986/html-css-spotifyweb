@@ -79,14 +79,24 @@
             <!-- Menu -->
             <div class="container">
                 <nav class="choice">
-                    <ul>
-                        <li><a href="#">in evidenza</a></li>
-                        <li><a href="#">podcast</a></li>
-                        <li><a href="#">classifiche</a></li>
-                        <li><a href="#">generi e mood</a></li>
-                        <li><a href="#">nuove uscite</a></li>
-                        <li><a href="#">scopri  </a></li>
-                    </ul>
+                    <a href="#">
+                        <div class="choice-button">in evidenza</div>
+                    </a>
+                    <a href="#">
+                        <div class="choice-button">podcast</div>
+                    </a>
+                    <a href="#">
+                        <div class="choice-button">classifiche</div>
+                    </a>
+                    <a href="#">
+                        <div class="choice-button">generi e mood</div>
+                    </a>
+                    <a href="#">
+                        <div class="choice-button">nuove uscite</div>
+                    </a>
+                    <a href="#">
+                        <div class="choice-button">scopri</div>
+                    </a>
                 </nav>
                 <div class="recipient">
                     <div class="title">
@@ -94,9 +104,11 @@
                     </div>
                     <section class="selection">
                         <div class="album">
-                            <img src="img/metal_lifting.jpg" alt="Dischi Metal">
-                            <div class="overlayinn">
-                                <i class="fa-solid fa-circle-play"></i>    
+                            <div class="album-cover">
+                                <img src="img/metal_lifting.jpg" alt="Dischi Metal">
+                                <div class="overlayinn">
+                                    <i class="fa-solid fa-circle-play"></i>    
+                                </div>
                             </div>
                             <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
@@ -203,8 +215,11 @@
             </div>
             <div class="time">
                 <span>0:25</span>
-                <div class="loading"></div>
-                <div class="loading-over"></div>
+                <div class="time-loading">
+                    <div class="loading"></div>
+                    <div class="loading-over"></div>
+                    <div id="loading-button"></div>
+                </div>
                 <span>4:35</span>
             </div>
         </div>
@@ -212,9 +227,15 @@
             <div class="settings">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
             </div>
-            <div class="volume"></div>
+            <div class="set-volume">
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="right-volume">
+                    <div class="volume"></div>
+                    <div class="volume-over"></div>
+                    <div id="volume-button"></div>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- /Fondo della pagina -->
