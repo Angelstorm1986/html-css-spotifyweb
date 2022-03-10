@@ -174,6 +174,9 @@ nav.top{
     border: 2px solid white;
     margin-right: 30px;
 }
+.btn a:hover{
+    padding: 6px 25px;
+}
 
 /* Menu */
 .container{
@@ -211,13 +214,29 @@ div.title{
     padding: 20px;
     gap: 10px;
 }
-div.album{
+.album{
     width: calc((100% - 50px) / 6);
     text-align: center;
+    position: relative;
 }
-div.album img{
+.album img{
     width: 100%;
 }
+.overlayinn{
+    background-color: rgba(0,0,0,0.5);
+    height: 121px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+    position: absolute;
+    transition: opacity .5s;
+}
+.overlayinn:hover {
+    opacity: 1;
+    transition: opacity .5s;
+  }
 .circle{
     border-radius: 50%;
 }
@@ -232,6 +251,7 @@ div.album img{
 .music-bar-aside{
     width: 20%;
     height: 100%;
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -239,7 +259,7 @@ div.album img{
 }
 #right{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .left-bar, .center-bar, .right-bar{
@@ -256,14 +276,19 @@ div.album img{
 .music-bar-aside>.fa-heart, .music-bar-aside>.fa-folder, .music-bar-aside>.fa-list-ul, .music-bar-aside>.fa-desktop, .music-bar-aside>.fa-volume-high{
     padding: 0 5px;
 }
-.volume::after{
-    content: '';
-    width: 40%;
+.settings{
+    
+}
+.settings i{
+    padding-right: 5px;
+}
+.volume{
     height: 3px;
     padding-left: 10px;
     background-color: grey;
     border-radius: 2px;
 }
+
 .music-bar-center{
     width: 60%;
     display: flex;
@@ -274,22 +299,29 @@ div.album img{
 .command>.fa-shuffle, .command>.fa-backward-step, .command>.fa-circle-play, .command>.fa-forward-step, .command>.fa-arrow-rotate-right{
     padding: 0 5px;
 }
+.command i:hover{
+    height: 27px;
+    cursor: pointer;
+}
 .command{
     width: 100%;
     height: 60%;
+    line-height: 36px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.command i{
-    height: 20px;
+.command i:hover{
+    height: 27px;
+    cursor: pointer;
 }
 .time{
     width: 60%;
     height: 40%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -303,4 +335,12 @@ div.album img{
     height: 3px;
     background-color: grey;
     border-radius: 2px;
+}
+.loading-over{
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 53px;
 }
