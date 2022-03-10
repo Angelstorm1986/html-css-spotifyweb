@@ -10,10 +10,6 @@
     div.album{
         width: calc((100% - 50px) / 4);
     }
-    .overlayinn{
-        height: 161px;
-        padding: 70px 20px;
-    }
 }
 @media screen and (max-width: 767px) {
     .selection{
@@ -21,10 +17,6 @@
     }
     div.album{
         width: calc((100% - 10px) / 2);
-    }
-    .overlayinn{
-        height: 230px;
-        padding: 105px 20px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -76,10 +68,6 @@
     }
     .selection{
         flex-wrap: wrap;
-    }
-    .overlayinn{
-        height: 209px;
-        padding: 97px 20px;
     }
     .left-bar img{
         width: 50px;

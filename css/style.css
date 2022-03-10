@@ -236,14 +236,12 @@ div.title{
     right: 0;
     bottom: 0;
     position: absolute;
-    transition: opacity .5s;
     display: none;
     justify-content: center;
     align-items: center;
 }
 .album-cover:hover .overlayinn{
     display: flex;
-    transition: opacity .5s;
 }
 .circle{
     border-radius: 50%;
