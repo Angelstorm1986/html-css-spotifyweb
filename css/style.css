@@ -16,6 +16,7 @@ barra di evidenza #fbaf30 */
 }
 
 /* General */
+
 body{
     width: 100%;
     background-color: #141922;
@@ -86,6 +87,7 @@ aside span{
 }
 .search-left{
     padding: 0 20px;
+    border-left: 1px solid black;
 }
 .search-left:hover{
     color: white;
@@ -127,7 +129,7 @@ aside span{
     width: 100%;
     height: 80px;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     padding: 0 20px;
 }
 .nav-aside-bottom i{
@@ -240,6 +242,9 @@ div.title{
     justify-content: center;
     align-items: center;
 }
+.overlayinn>.fa-circle-play{
+    font-size: larger;
+}
 .album-cover:hover .overlayinn{
     display: flex;
 }
@@ -261,18 +266,29 @@ div.title{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
 }
 .left-bar, .center-bar, .right-bar{
-    width: 33%;
+    flex: 1 1 calc(100% / 3);
 }
 .left-bar{
-    max-height: 60px;
-    max-width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .left-bar img{
     width: 100%;
     height: 100%;
+    max-width: 70px;
+    max-height: 70px;
+}
+.center-bar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-bar h3, .center-bar p{
+    flex: 1 1 100%;
 }
 .music-bar-aside>.fa-heart, .music-bar-aside>.fa-folder, .music-bar-aside>.fa-list-ul, .music-bar-aside>.fa-desktop, .music-bar-aside>.fa-volume-high{
     padding: 0 5px;

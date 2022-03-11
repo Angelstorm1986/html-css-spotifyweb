@@ -18,6 +18,12 @@
     div.album{
         width: calc((100% - 10px) / 2);
     }
+    .left-bar, .center-bar{
+        flex: 1 1 calc(100% / 2);
+    }
+    .right-bar{
+        display: none;
+    }
 }
 @media screen and (max-width: 575px) {
     main{
@@ -55,7 +61,7 @@
         padding: 0 10px;
     }
     .nav-aside-bottom i{
-        margin-top: 10px;   
+        margin-top: 10px;  
     }
     .nav-aside-bottom hr{
         display: none;
@@ -69,14 +75,21 @@
     .selection{
         flex-wrap: wrap;
     }
-    .left-bar img{
-        width: 50px;
-        height: 50px;
+    .left-bar{
+        flex: 1 1 100%;
+        max-height: 50px;
+        max-width: 50px;
     }
     .center-bar{
         display: none;
     }
     .right-bar{
         display: none;
+    }
+    .fa-list-ul, .fa-desktop{
+        display: none;
+    }
+    .set-volume{
+        flex: 1 1 100%;
     }
 }
